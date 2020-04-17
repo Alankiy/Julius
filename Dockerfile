@@ -10,4 +10,3 @@ RUN unzip dictation-kit-$JULIUS_VERSION.zip
 RUN cd dictation-kit-$JULIUS_VERSION
 RUN chmod 755 *.sh
 RUN chmod 755 bin/linux/*
-RUN ./bin/linux/julius -C main.jconf -C am-dnn.jconf -dnnconf julius.dnnconf -input adinnet
