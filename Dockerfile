@@ -9,4 +9,5 @@ RUN curl -OL http://jaist.dl.sourceforge.jp/julius/71011/dictation-kit-$JULIUS_V
 RUN unzip dictation-kit-$JULIUS_VERSION.zip &&
     cd dictation-kit-$JULIUS_VERSION && 
     chmod 755 *.sh && 
-    chmod 755 bin/linux/*
+    chmod 755 bin/linux/* &&
+    ./bin/linux/julius -C main.jconf -C am-dnn.jconf -dnnconf julius.dnnconf -input adinnet
