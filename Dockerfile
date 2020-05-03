@@ -1,4 +1,4 @@
-FROM ubuntu  
+FROM ubuntu:19.10  
 MAINTAINER alankiy
 ENV JULIUS_VERSION 4.5
 ENV DEBIAN_FRONTEND=noninteractive
