@@ -1,7 +1,6 @@
 FROM ubuntu:19.10  
 MAINTAINER alankiy
 ENV JULIUS_VERSION 4.5
-ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get install -y curl build-essential && apt-get clean
 RUN apt-get install -y zip unzip && apt-get clean
 RUN apt-get install -y libpulse-dev
